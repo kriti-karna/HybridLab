@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    tools:context=".register_pg">
+
+    <ImageView
+        android:id="@+id/OrnUp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ornament0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/OrnDown"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ornament0_rot"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/kleymissky"
+        android:text="Name"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp" />
+
+    <EditText
+        android:id="@+id/inName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/cinzel_regular"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/usn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/kleymissky"
+        android:text="USN"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp" />
+
+    <EditText
+        android:id="@+id/inUsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/cinzel_regular"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/kleymissky"
+        android:text="Password"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp" />
+
+    <EditText
+        android:id="@+id/inPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/cinzel_regular"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/OrnDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bt_submit"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/admin_sw"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="8dp"
+        android:text="Admin"
+        android:fontFamily="@font/kleymissky"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:switchMinWidth="50dp"
+        android:layout_marginLeft="100dp"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/OrnUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
